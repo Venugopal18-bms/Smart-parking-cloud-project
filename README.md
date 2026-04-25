@@ -183,3 +183,4 @@ docker compose exec backend node src/seed/seed.js
 - Problem statement selection: Smart parking has strong data analytics potential because it produces occupancy, revenue, peak demand, slot availability, violation, vehicle category, and sensor health data.
 - Report: A ready-to-submit report draft is included in `docs/REPORT.md`.
 - Execution and implementation: The project includes frontend, backend, NoSQL database models, analytics APIs, Dockerfiles, Docker Compose, seed data, and cloud deployment steps.
+"# Smart-parking-cloud-project" 
