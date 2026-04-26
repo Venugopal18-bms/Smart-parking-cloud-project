@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 const parkingSessionSchema = new mongoose.Schema(
   {
     lot: { type: mongoose.Schema.Types.ObjectId, ref: "ParkingLot", required: true },
+    user: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
     vehicleNumber: { type: String, required: true },
     vehicleType: {
       type: String,

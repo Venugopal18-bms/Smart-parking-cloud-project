@@ -532,6 +532,80 @@ th {
   gap: 12px;
 }
 
+.chart-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.chart-controls-single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.chart-empty {
+  min-height: 280px;
+  border: 1px dashed #d5ded3;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  text-align: center;
+  color: #667275;
+  background: #fbfcfa;
+}
+
+.boxplot-wrap {
+  border: 1px solid #e1e8df;
+  border-radius: 8px;
+  background: #fbfcfa;
+  overflow-x: auto;
+}
+
+.boxplot-svg {
+  width: 100%;
+  min-width: 720px;
+  display: block;
+}
+
+.boxplot-grid line {
+  stroke: #dfe6de;
+  stroke-dasharray: 4 4;
+}
+
+.boxplot-grid text,
+.boxplot-count {
+  fill: #667275;
+  font-size: 12px;
+}
+
+.boxplot-label {
+  fill: #172326;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.boxplot-whisker,
+.boxplot-cap {
+  stroke: #172326;
+  stroke-width: 2;
+}
+
+.boxplot-box {
+  fill: rgba(47, 111, 115, 0.16);
+  stroke: #2f6f73;
+  stroke-width: 2;
+}
+
+.boxplot-median {
+  stroke: #d9893d;
+  stroke-width: 3;
+}
+
+.boxplot-outlier {
+  fill: #a84f57;
+}
+
 .insight-list {
   display: grid;
   gap: 10px;
@@ -573,6 +647,10 @@ th {
   }
 
   .filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-controls {
     grid-template-columns: 1fr;
   }
 

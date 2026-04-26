@@ -95,4 +95,6 @@ http://localhost:8080
 
 mongodb://localhost:27017
 
+https://venugopal18-smart-parking.vercel.app/
+
 

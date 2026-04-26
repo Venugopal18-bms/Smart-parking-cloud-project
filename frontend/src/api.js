@@ -33,7 +33,7 @@ export const api = {
       body: JSON.stringify(payload)
     }),
   lots: () => request("/lots"),
-  sessions: () => request("/sessions"),
+  sessions: (params) => request(withQuery("/sessions", params)),
   summary: (params) => request(withQuery("/analytics/summary", params)),
   peakHours: (params) => request(withQuery("/analytics/peak-hours", params)),
   lotPerformance: (params) => request(withQuery("/analytics/lot-performance", params)),
@@ -41,7 +41,6 @@ export const api = {
   paymentStatus: (params) => request(withQuery("/analytics/payment-status", params)),
   durationBuckets: (params) => request(withQuery("/analytics/duration-buckets", params)),
   revenueByVehicleType: (params) => request(withQuery("/analytics/revenue-by-vehicle-type", params)),
-  dailyTrend: (params) => request(withQuery("/analytics/daily-trend", params)),
   turnover: (params) => request(withQuery("/analytics/turnover", params)),
   checkIn: (payload) =>
     request("/sessions/check-in", {
